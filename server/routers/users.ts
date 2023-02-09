@@ -20,6 +20,9 @@ export const userRouter = t.router({
     .input(z.object({ name: z.string() }))
     // A mutation is a procedure that changes data
     .mutation((req) => {
+      // Log context
+      console.log(req.ctx.isAdmin)
+
       // Log on the server
       console.log(
         `Updating user ${req.input.userId} with name ${req.input.name}`
