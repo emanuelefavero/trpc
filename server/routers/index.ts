@@ -1,6 +1,11 @@
 // * IMPORT TRPC INITIALIZER
 import { t } from '../trpc'
 
+// * Import other routers
+import { userRouter } from './users'
+
+// --------------------------------------------
+
 // * Define the router and its procedures (endpoints)
 export const appRouter = t.router({
   // http://localhost:3000/trpc/sayHi
@@ -19,4 +24,8 @@ export const appRouter = t.router({
       console.log(`Client said: ${req.input}`)
       return true
     }),
+
+  // * Create a router
+  // http://localhost:3000/trpc/users
+  users: userRouter,
 })

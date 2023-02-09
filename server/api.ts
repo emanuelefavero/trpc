@@ -8,6 +8,8 @@ import { createExpressMiddleware } from '@trpc/server/adapters/express'
 // * IMPORT TRPC ROUTER
 import { appRouter } from './routers' // <- ./routers/index.ts
 
+// --------------------------------------------
+
 const app = express()
 app.use(cors({ origin: 'http://localhost:5173' })) // cors for client
 
