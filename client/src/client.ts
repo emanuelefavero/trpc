@@ -22,7 +22,7 @@ async function main() {
   const result = await client.sayHi.query()
   console.log(result)
 
-  const result2 = await client.users.getUsers.query()
+  const result2 = await client.users.get.query({ userId: '123 ' })
   console.log(result2)
 
   // http://localhost:3000/trpc/logToServer
