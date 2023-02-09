@@ -19,7 +19,7 @@ This is a cheat sheet repo for tRPC, a library for building typesafe APIs betwee
 
 ## Setup a new project
 
-tRPC works well when you have a monorepo with a `server` and `client` folder on the same level
+tRPC works well when you have a monorepo with a `server` and `client` folder on the same levelf
 
 > Note: you can setup a new tRPC project with [create-t3-app](https://create.t3.gg/)
 
