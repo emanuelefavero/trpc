@@ -36,3 +36,9 @@ async function main() {
 }
 
 main()
+
+// --------------------------------------------
+
+// ? query vs mutation
+// * query: read-only
+// * mutation: changes data
