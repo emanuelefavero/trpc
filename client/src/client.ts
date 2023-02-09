@@ -25,6 +25,12 @@ async function main() {
   const result2 = await client.users.get.query({ userId: '123 ' })
   console.log(result2)
 
+  const result3 = await client.users.update.mutate({
+    userId: '123',
+    name: 'Jack',
+  })
+  console.log(result3)
+
   // http://localhost:3000/trpc/logToServer
   await client.logToServer.mutate('hello from client') // check server console
 }
