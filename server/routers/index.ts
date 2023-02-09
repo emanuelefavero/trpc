@@ -1,5 +1,5 @@
 // * IMPORT TRPC INITIALIZER
-import { t } from '../trpc'
+import { adminProcedure, t } from '../trpc'
 
 // * Import other routers
 import { userRouter } from './users'
@@ -24,6 +24,13 @@ export const appRouter = t.router({
       console.log(`Client said: ${req.input}`)
       return true
     }),
+
+  // * Admin only route (defined in trpc.ts)
+  // http://localhost:3000/trpc/secretData
+  secretData: adminProcedure.query(({ ctx }) => {
+    console.log(ctx.user)
+    return 'super secret admin data'
+  }),
 
   // * Create a router
   // http://localhost:3000/trpc/users

@@ -31,6 +31,9 @@ async function main() {
   })
   console.log(result3)
 
+  const result4 = await client.secretData.query()
+  console.log(result4)
+
   // http://localhost:3000/trpc/logToServer
   await client.logToServer.mutate('hello from client') // check server console
 }
