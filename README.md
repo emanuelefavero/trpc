@@ -4,6 +4,28 @@ This is a cheat sheet repo for tRPC, a library for building typesafe APIs betwee
 
 > Note: tRPC main features work with TypeScript
 
+&nbsp;
+
+---
+
+&nbsp;
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Running](#running)
+- [Setup a new project](#setup-a-new-project)
+  - [Setup server folder](#setup-server-folder)
+  - [Setup client folder](#setup-client-folder)
+- [Resources](#resources)
+- [License](#license)
+
+&nbsp;
+
+---
+
+&nbsp;
+
 ## Installation
 
 - clone repo and `cd` into it
@@ -16,6 +38,12 @@ This is a cheat sheet repo for tRPC, a library for building typesafe APIs betwee
 - `cd` into `client` and run `npm run dev`
 
 - visit `http://localhost:5173/` to see the client
+
+&nbsp;
+
+---
+
+&nbsp;
 
 ## Setup a new project
 
@@ -57,6 +85,12 @@ OR
 
 > Note: see this repo project for a working example
 
+&nbsp;
+
+---
+
+&nbsp;
+
 ## Resources
 
 - [tRPC.io](https://trpc.io/)
@@ -67,3 +101,11 @@ OR
 ## License
 
 - [MIT](LICENSE.md)
+
+&nbsp;
+
+---
+
+&nbsp;
+
+[**Go To Top &nbsp; ⬆️**](#trpc)
